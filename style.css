@@ -1,4 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@font-face {
+    font-family: "Atkinson Hyperlegible";
+    font-weight: 700;
+    src: url(/font/AtkinsonHyperlegible-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Atkinson Hyperlegible";
+    font-weight: 400;
+    src: url(/font/AtkinsonHyperlegible-Regular.ttf);
+    }
+
+    @font-face {
+    font-family: "Atkinson Hyperlegible";
+    font-weight: 400;
+    font-style: italic;
+    src: local(''),
+    url(/font/AtkinsonHyperlegible-Italic.ttf);
+    }
+
+    @font-face {
+    font-family: "Atkinson Hyperlegible";
+    font-weight: 700;
+    font-style: italic;
+    src:url(/font/AtkinsonHyperlegible-BoldItalic.ttf);
+    }
 
 .sumario-caps::-webkit-scrollbar {
     width: 15.9px;
@@ -31,13 +56,9 @@ gap: 10px;
 flex: 1 0 0;
   }
 
-.sumario.sumario-caps::-webkit-scrollbar-button {
-    height: 5px;
-}
 
 ::-webkit-scrollbar-button:single-button:vertical:decrement {
-    height: 15px;
-    width: 6px;
+    height: 18px;
     background-position: center 6px;
     background-image: url(/icons/up-inativo.svg);
     background-repeat: no-repeat;
@@ -52,8 +73,7 @@ flex: 1 0 0;
 }
 
 ::-webkit-scrollbar-button:single-button:vertical:increment {
-    height: 15px;
-    width: 6px;
+    height: 18px;
     background-position: center 3px;
     background-image: url("/icons/down-inativo.svg");
     background-repeat: no-repeat;
@@ -136,7 +156,7 @@ aside{
 
 .barra-busca:hover{
     border: 3px solid var(--vermelho-padrao);
-    background: url(icons/search-ativo.svg),url(/icons/close.svg);
+    background: url(/icons/search-ativo.svg),url(/icons/close.svg);
     background-repeat: no-repeat;
     background-size: 20px;
     background-position: 340px 10px, 370px 10px;
@@ -212,48 +232,6 @@ aside{
         }
     }
 
-@media (max-width: 410px) {
-    .sumario:hover {
-        /* Remove todas as alterações feitas no hover */
-        .sumario-titulo h3 {
-            color: inherit;
-        }
-
-        #botao {
-            color: inherit;
-            border: none;
-            cursor: default;  
-        }
-
-        .sumario-titulo #icon-minimizar {
-            content: url("/icons/minimizar-inativo.svg");
-        }
-
-        .sumario-titulo #icon-expandir {
-            content: url("/icons/expandir-inativo.svg");
-        }
-
-        #numeracao {
-            color: inherit;
-        }
-
-        .sumario-intro hr {
-            border: 1px solid inherit;
-        }
-
-        #titulo {
-            color: inherit;
-        }
-
-        a {
-            color: inherit;
-        }
-
-        .sumario-caps::-webkit-scrollbar-thumb {
-            background-color: inherit;
-        }
-    }
-}
 
 #minimiza :hover{
     background-color: var(--vermelho-padrao);
@@ -304,8 +282,6 @@ aside{
 .sumario:hover .capitulo #numeracao.selected{
     background-color: var(--verde-padrao);
 }
-
-
 
 .capitulo{
     @media(max-width:410px){
@@ -369,6 +345,14 @@ aside{
     img{
         width: 24px;
         height: 24px;
+    }
+}
+
+#home-moblie:hover{
+    background-color: var(--vermelho-padrao);
+
+    img{
+        content: url(/icons/home-mobile-hover.svg);
     }
 }
 
@@ -604,6 +588,14 @@ align-self: stretch;
     
 }
 
+.close-mobile:hover{
+    background-color: var(--vermelho-padrao);
+
+    img{
+        content: url(/icons/close-mobile-hover.svg);
+    }
+}
+
 #close{
     display: none;
 
@@ -634,11 +626,19 @@ align-self: stretch;
     display: none;
     @media (max-width:410px){
         display: flex;
-        padding: 12px 16px;
+        padding: 10px 16px;
         align-items: center;
         border-radius: 16px;
         border: 3px solid var(--vermelho-padrao, #AB2020);
         background: var(--tema-tema, #FFF);
+    }
+}
+
+.abrir:hover{
+    background-color: var(--vermelho-padrao);
+
+    img{
+        content: url(/icons/sumario-mobile-hover.svg);
     }
 }
 

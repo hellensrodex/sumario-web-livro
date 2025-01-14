@@ -29,41 +29,35 @@ const subcapitulos = document.querySelectorAll('#subcap li');
 const capitulos = document.querySelectorAll('.capitulo');
 const introducao = document.querySelector('.sumario-intro');
 
-// Adicionar o evento de clique nos subcapítulos
 subcapitulos.forEach(subcapitulo => {
     subcapitulo.addEventListener('click', () => {
-        // Remover a classe 'selected' de todos os subcapítulos e capítulos
+    
         subcapitulos.forEach(item => item.classList.remove('selected'));
         capitulos.forEach(capitulo => {
             const numeracao = capitulo.querySelector('#numeracao');
             if (numeracao) numeracao.classList.remove('selected');
         });
 
-        // Adicionar a classe 'selected' ao subcapítulo clicado
         subcapitulo.classList.add('selected');
 
-        // Atualizar a numeração do capítulo relacionado
         const capituloAtual = subcapitulo.closest('.capitulo');
         const numeracaoAtual = capituloAtual ? capituloAtual.querySelector('#numeracao') : null;
 
         if (numeracaoAtual) numeracaoAtual.classList.add('selected');
 
-        // Remover a classe 'selected' da introdução
         if (introducao) introducao.classList.remove('selected');
     });
 });
 
-// Adicionar o evento de clique na introdução
 if (introducao) {
     introducao.addEventListener('click', () => {
-        // Remover a classe 'selected' de todos os subcapítulos e capítulos
+
         subcapitulos.forEach(item => item.classList.remove('selected'));
         capitulos.forEach(capitulo => {
             const numeracao = capitulo.querySelector('#numeracao');
             if (numeracao) numeracao.classList.remove('selected');
         });
 
-        // Adicionar a classe 'selected' à introdução
         introducao.classList.add('selected');
     });
 }
