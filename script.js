@@ -62,4 +62,21 @@ if (introducao) {
     });
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    const abrirSumario = document.querySelector('#abrir-sumario .abrir');
+    const fecharSumario = document.querySelector('#close .close-mobile');
+    const sumario = document.querySelector('.sumario');
+
+    abrirSumario.addEventListener('click', () => {
+        sumario.style.display = 'flex'
+        abrirSumario.style.display = 'none'; 
+        fecharSumario.style.display = 'flex'
+    });
+    fecharSumario.addEventListener('click', () => {
+        sumario.style.display = 'none' 
+        abrirSumario.style.display = 'flex'; 
+        fecharSumario.style.display = 'none'; 
+    });
+});
+    
 

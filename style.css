@@ -39,22 +39,9 @@
     display: flex;
     align-items: center;
     border: 3px solid #d3d3d3;
-
-    @media(max-width:410px){
-        background-color: var(--vermelho-padrao);
-    }
 }
 
-.sumario::-webkit-scrollbar-thumb {
-    border-radius: 8px;
-    width: 7.905px;
-    height: 94.89px;
-    background: var(--vermelho-padrao, #AB2020);
-    display: flex;
-align-items: flex-start;
-gap: 10px;
-flex: 1 0 0;
-  }
+
 
 
 ::-webkit-scrollbar-button:single-button:vertical:decrement {
@@ -74,9 +61,12 @@ flex: 1 0 0;
 
 ::-webkit-scrollbar-button:single-button:vertical:increment {
     height: 18px;
-    background-position: center 3px;
+    background-position: center 6px;
     background-image: url("/icons/down-inativo.svg");
     background-repeat: no-repeat;
+    @media(max-width: 410px){
+        
+    }
 }
 
 ::-webkit-scrollbar-button:single-button:vertical:increment:active {
@@ -606,6 +596,16 @@ align-self: stretch;
         padding-top: 50px;
         align-items: center;
         gap: 10px;
+    }
+}
+
+#close .close-mobile{
+    display: none;
+}
+
+.sumario{
+    @media (max-width:410px){
+        display: none;
     }
 }
 
