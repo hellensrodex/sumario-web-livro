@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
         fecharSumario.style.display = 'flex'
     });
     fecharSumario.addEventListener('click', () => {
-        sumario.style.display = 'none' 
+        sumario.style.display = '' 
         abrirSumario.style.display = 'flex'; 
         fecharSumario.style.display = 'none'; 
     });
