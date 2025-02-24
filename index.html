@@ -1,109 +1,335 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <aside>
-        <div class="wrap">
-            
-            <form>
-                <div class="busca">
-                    <input type="text" name="" id="" value placeholder="Buscar" class="barra-busca">
-                </div>
-            </form>
-            
-            <div class="sumario">
-                <div class="sumario-titulo">
-                    <h3>Sumário</h3>
-                    <button id="botao" class="minimizar">
-                        <img src="/icons/minimizar-inativo.svg" id="icon-minimizar" alt="Ícone de minimizar" class="visible">
-                        <img src="/icons/expandir-inativo.svg" id="icon-expandir" alt="Ícone de expandir" class="hidden">
-                        <span id="botao-texto">MINIMIZAR</span>
-                    </button>
-                    <button id="home-mobile">
-                        <a href="#"><img src="/icons/home-mobile.svg" alt="Página Inicial" ></a>
-                    </button>
-                </div>
-                <div class="sumario-intro">
-                    <a href="#"><p>Introdução: O estudo da Química Ambiental</p></a>
-                    <hr>
-                </div>
-                <div class="sumario-caps">
-                    <ul>
-                        <li class="capitulo"><a href="#" class="num-cap"><span id="numeracao">01</span> <span id="titulo">Energia</span></a>
-                            <ul id="subcap">
-                                <li><a href="#"> <span id="subcap-numero">1.1</span> <span id="subcap-nome">Geração Hidroelétrica</span></a></li>
-                                <li><a href="#"><span id="subcap-numero">1.2</span> <span id="subcap-nome">Combustível Fóssil</span> </a></li>
-                                <li><a href="#"><span id="subcap-numero">1.3 </span> <span id="subcap-nome">Energia Eólica</span></a></li>
-                                <li><a href="#"><span id="subcap-numero">1.4</span> <span id="subcap-nome">Energia Núclear</span> </a></li>
-                                <li><a href="#"><span id="subcap-numero">1.5</span> <span id="subcap-nome">Célula a combustível</span> </a></li>
-                                <li><a href="#"><span id="subcap-numero">1.6</span> <span id="subcap-nome">Desenvolvendo e aplicando o conhecimento</span> </a></li>
-                                <li><a href="#"><span id="subcap-numero">1.7</span> <span id="subcap-nome">Referências</span> </a></li>
-                            </ul>
-                        </li>
-                        <hr>
-                        <li class="capitulo"><a href="#"><span id="numeracao">02</span> <span id="titulo">Atmosfera</span></a>
-                            <ul id="subcap">
-                                <li><a href="#"> <span>2.1</span> <span>Introdução</span> </a></li>
-                                <li><a href="#"> <span id="subcap-numero">2.2</span> <span id="subcap-nome">Transformações químicas na atmosfera</span> </a></li>
-                                <li><a href="#"> <span id="subcap-numero">2.3</span> <span id="subcap-nome">A poluição atmosferica</span> </a></li>
-                                <li><a href="#"> <span id="subcap-numero">2.4</span> <span id="subcap-nome">Desenvolvendo e aplicando o conhecimento</span> </a></li>
-                                <li><a href="#"> <span id="subcap-numero">2.5</span> <span id="subcap-nome">Referências</span> </a></li>
-                            </ul>
-                        </li>
-                        <hr>
-                        <li class="capitulo"><a href="#"><span id="numeracao">03</span> <span id="titulo">Recursos Hídricos</span></a>
-                            <ul id="subcap">
-                                <li><a href="#"> <span id="subcap-numero">3.1</span> <span id="subcap-nome">Introdução</span></a></li>
-                                <li><a href="#"> <span id="subcap-numero">3.2</span> <span id="subcap-nome">Ciclo Hidrológico</span></a></li>
-                                <li><a href="#"> <span id="subcap-numero">3.3</span> <span id="subcap-nome">Água: propriedades físicas e implicações no clima</span></a></li>
-                                <li><a href="#"> <span id="subcap-numero">3.4</span> <span id="subcap-nome">Desenvolvendo e aplicando o conhecimento</span></a></li>
-                                <li><a href="#"> <span id="subcap-numero">3.5</span> <span id="subcap-nome">Água: Solvente e Meio Biológico</span></a></li>
-                                <li><a href="#"> <span id="subcap-numero">3.6</span> <span id="subcap-nome">Águas naturais e reações</span></a></li>
-                                <li><a href="#"> <span id="subcap-numero">3.7</span> <span id="subcap-nome">Desenvolvendo e aplicando o conhecimento</span></a></li>
-                                <li><a href="#"> <span id="subcap-numero">3.8</span> <span id="subcap-nome">Poluição e Purificação da Água</span></a></li>
-                                <li><a href="#"> <span id="subcap-numero">3.9</span> <span id="subcap-nome">Água subterrânea: contaminação química e remediação</span></a></li>
-                                <li><a href="#"> <span id="subcap-numero">3.10</span> <span id="subcap-nome">Desenvolvendo e aplicando o conhecimento</span></a></li>
-                                <li><a href="#"> <span id="subcap-numero">3.11</span> <span id="subcap-nome">Referências</span></a></li>
-                            </ul>
-                        </li>
-                        <hr>
-                        <li class="capitulo"><a href=""><span id="numeracao">04</span> <span id="titulo">Biosfera</span></a>
-                            <ul id="subcap">
-                                <li><a href="#"> <span id="subcap-numero">4.1</span> <span id="subcap-nome">Introdução</span></a></li>
-                                <li><a href="#"> <span id="subcap-numero">4.2</span> <span id="subcap-nome">A Produção de alimentos</span></a></li>
-                                <li><a href="#"> <span id="subcap-numero">4.3</span> <span id="subcap-nome">Pesticidas</span></a></li>
-                                <li><a href="#"> <span id="subcap-numero">4.4</span> <span id="subcap-nome">Alimentos geneticamente modificados</span></a></li>
-                                <li><a href="#"> <span id="subcap-numero">4.5</span> <span id="subcap-nome">Desenvolvendo e aplicando o conhecimento</span></a></li>
-                                <li><a href="#"> <span id="subcap-numero">4.6</span> <span id="subcap-nome">Referências</span></a></li>
-                            </ul>
-                        </li>
-                        <hr>
-                        <li class="capitulo"><a href=""><span id="titulo">Consulta</span></a>
-                            <ul id="subcap">
-                                <li><a href="#"><span id="subcap-nome">Tabela Periódica</span></a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                </div>
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+      </head>
+      <body>
+        <main>
+          <h1>Conteúdo</h1>
+          <!-- Conteúdo -->
+        </main>
+        <aside>
+          <form>
+            <div class="busca">
+              <input
+                type="text"
+                name=""
+                id=""
+                value
+                placeholder="Buscar"
+                class="barra-busca"
+              />
             </div>
-        </div>
-        <div id="abrir-sumario">
+          </form>
+          <div class="sumario">
+            <div class="sumario-titulo">
+              <h3>Sumário</h3>
+              <button id="botao" class="minimizar">
+                <img
+                  src="/icons/minimizar-inativo.svg"
+                  id="icon-minimizar"
+                  alt="Ícone de minimizar"
+                  class="visible"
+                />
+                <img
+                  src="/icons/expandir-inativo.svg"
+                  id="icon-expandir"
+                  alt="Ícone de expandir"
+                  class="hidden"
+                />
+                <span id="botao-texto">MINIMIZAR</span>
+              </button>
+              <button id="home-mobile">
+                <a href="#"
+                  ><img src="/icons/home-mobile.svg" alt="Página Inicial"
+                /></a>
+              </button>
+            </div>
+            <div class="sumario-intro">
+              <a href="#" class="sumario-item">
+                <p>Introdução: O estudo da Química Ambiental</p>
+              </a>
+              <hr class="sumario-item" />
+            </div>
+            <div class="sumario-caps">
+              <ul>
+                <li class="capitulo">
+                  <a href="#">
+                    <span class="numeracao sumario-item">01</span>
+                    <span class="titulo sumario-item">Energia</span>
+                   </a>
+                  <ul class="subcap">
+                    <li class="sumario-item">
+                      <a href="#">
+                        <span class="subcap-numero">1.1</span>
+                        <span class="subcap-nome">Geração Hidroelétrica</span>
+                      </a>
+                    </li>
+                    <li class="sumario-item">
+                      <a href="#">
+                        <span class="subcap-numero sumario-item">1.2</span>
+                        <span class="subcap-nome">Combustível Fóssil</span>
+                      </a>
+                    </li>
+                    <li class="sumario-item">
+                      <a href="#">
+                        <span class="subcap-numero">1.3</span>
+                        <span class="subcap-nome">Energia Eólica</span>
+                      </a>
+                    </li>
+                    <li class="sumario-item">
+                      <a href="#">
+                        <span class="subcap-numero">1.4</span>
+                        <span class="subcap-nome">Energia Núclear</span>
+                      </a>
+                    </li>
+                    <li class="sumario-item">
+                      <a href="#">
+                        <span class="subcap-numero">1.5</span>
+                        <span class="subcap-nome">Célula a combustível</span>
+                      </a>
+                    </li>
+                    <li class="sumario-item">
+                      <a href="#">
+                        <span class="subcap-numero">1.6</span>
+                        <span class="subcap-nome"
+                          >Desenvolvendo e aplicando o conhecimento</span
+                        >
+                      </a>
+                    </li>
+                    <li class="sumario-item">
+                      <a href="#">
+                        <span class="subcap-numero">1.7</span>
+                        <span class="subcap-nome">Referências</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                </li>
+                <hr class="sumario-item" />
+                <li class="capitulo">
+                  <a href="#">
+                    <span class="numeracao sumario-item">02</span>
+                    <span class="titulo sumario-item">Atmosfera</span>
+                  </a>
+                  <ul class="subcap">
+                    <li class="sumario-item">
+                      <a href="#">
+                        <span class="subcap-numero">2.1</span>
+                        <span class="subcap-nome">Introdução</span>
+                      </a>
+                    </li>
+                    <li class="sumario-item">
+                      <a href="#">
+                        <span class="subcap-numero">2.2</span>
+                        <span class="subcap-nome"
+                          >Transformações químicas na atmosfera</span
+                        >
+                      </a>
+                    </li>
+                    <li class="sumario-item">
+                      <a href="#">
+                        <span class="subcap-numero">2.3</span>
+                        <span class="subcap-nome">A poluição atmosferica</span>
+                      </a>
+                    </li>
+                    <li class="sumario-item">
+                      <a href="#">
+                        <span class="subcap-numero">2.4</span>
+                        <span class="subcap-nome"
+                          >Desenvolvendo e aplicando o conhecimento</span
+                        >
+                      </a>
+                    </li>
+                    <li class="sumario-item">
+                      <a href="#">
+                        <span class="subcap-numero">2.5</span>
+                        <span class="subcap-nome">Referências</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <hr class="sumario-item" />
+                <li class="capitulo">
+                  <a href="#" >
+                    <span class="numeracao sumario-item">03</span>
+                    <span class="titulo sumario-item">Recursos Hídricos</span>
+                  </a>
+                <ul class="subcap">
+                  <li class="sumario-item">
+                    <a href="#">
+                      <span class="subcap-numero">3.1</span>
+                      <span class="subcap-nome">Introdução</span>
+                    </a>
+                  </li>
+                  <li class="sumario-item">
+                    <a href="#">
+                      <span class="subcap-numero">3.2</span>
+                      <span class="subcap-nome">Ciclo Hidrológico</span>
+                    </a>
+                  </li>
+                  <li class="sumario-item">
+                    <a href="#">
+                      <span class="subcap-numero">3.3</span>
+                      <span class="subcap-nome"
+                        >Água: propriedades físicas e implicações no clima</span
+                      >
+                    </a>
+                  </li>
+                  <li class="sumario-item">
+                    <a href="#">
+                      <span class="subcap-numero">3.4</span>
+                      <span class="subcap-nome"
+                        >Desenvolvendo e aplicando o conhecimento</span
+                      >
+                    </a>
+                  </li>
+                  <li class="sumario-item">
+                    <a href="#">
+                      <span class="subcap-numero">3.5</span>
+                      <span class="subcap-nome"
+                        >Água: Solvente e Meio Biológico</span
+                      >
+                    </a>
+                  </li>
+                  <li class="sumario-item">
+                    <a href="#">
+                      <span class="subcap-numero">3.6</span>
+                      <span class="subcap-nome">Águas naturais e reações</span>
+                    </a>
+                  </li>
+                  <li class="sumario-item">
+                    <a href="#">
+                      <span class="subcap-numero">3.7</span>
+                      <span class="subcap-nome"
+                        >Desenvolvendo e aplicando o conhecimento</span
+                      >
+                    </a>
+                  </li>
+                
+                  <li class="sumario-item">
+                    <a href="#">
+                      <span class="subcap-numero">3.8</span>
+                      <span class="subcap-nome"
+                        >Poluição e Purificação da Água</span
+                      >
+                    </a>
+                  </li>
+                  <li class="sumario-item">
+                    <a href="#">
+                      <span class="subcap-numero">3.9</span>
+                      <span class="subcap-nome"
+                        >Água subterrânea: contaminação química e remediação</span
+                      >
+                    </a>
+                  </li>
+                  <li class="sumario-item">
+                    <a href="#">
+                      <span class="subcap-numero">3.10</span>
+                      <span class="subcap-nome"
+                        >Desenvolvendo e aplicando o conhecimento</span
+                      >
+                    </a>
+                  </li>
+                  <li class="sumario-item">
+                    <a href="#">
+                      <span class="subcap-numero">3.11</span>
+                      <span class="subcap-nome">Referências</span>
+                    </a>
+                  </li>
+                </ul>
+            </li>
+                <hr class="sumario-item" />
+                <li class="capitulo">
+                  <a href="">
+                    <span class="numeracao sumario-item">04</span>
+                    <span class="titulo sumario-item">Biosfera</span>
+                  </a>
+                <ul class="subcap">
+                  <li class="sumario-item">
+                    <a href="#">
+                      <span class="subcap-numero">4.1</span>
+                      <span class="subcap-nome">Introdução</span>
+                    </a>
+                  </li>
+                  <li class="sumario-item">
+                    <a href="#">
+                      <span class="subcap-numero">4.2</span>
+                      <span id="subcap-nome">A Produção de alimentos</span>
+                    </a>
+                  </li>
+                  <li class="sumario-item">
+                    <a href="#">
+                      <span class="subcap-numero">4.3</span>
+                      <span class="subcap-nome">Pesticidas</span>
+                    </a>
+                  </li>
+                  <li class="sumario-item">
+                    <a href="#">
+                      <span class="subcap-numero">4.4</span>
+                      <span class="subcap-nome"
+                        >Alimentos geneticamente modificados</span
+                      >
+                    </a>
+                  </li>
+                  <li class="sumario-item">
+                    <a href="#">
+                      <span class="subcap-numero">4.5</span>
+                      <span class="subcap-nome"
+                        >Desenvolvendo e aplicando o conhecimento</span
+                      >
+                    </a>
+                  </li>
+                  <li class="sumario-item">
+                    <a href="#">
+                      <span class="subcap-numero">4.6</span>
+                      <span class="subcap-nome">Referências</span>
+                    </a>
+                  </li>
+                </ul>
+            </li>
+                <hr class="sumario-item" />
+                <li class="capitulo">
+                  <a href="">
+                    <span class="titulo sumario-item">Consulta</span>
+                  </a>
+                  <ul class="subcap">
+                    <li class="sumario-item">
+                      <a href="#">
+                        <span class="subcap-nome">Tabela Periódica</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="abrir-sumario">
             <button class="abrir">
-                <img src="/icons/sumario-mobile.svg" alt="Abrir Sumário">
+              <img src="/icons/sumario-mobile.svg" alt="Abrir Sumário" />
             </button>
-        </div>
-        <div id="close">
+          </div>
+          <div id="close">
             <button class="close-mobile">
-                <img src="/icons/close-mobile.svg" alt="Fechar Sumário">
+              <img src="/icons/close-mobile.svg" alt="Fechar Sumário" />
             </button>
-        </div>
-    </aside>
-    <script src="/script.js"></script>
+          </div>
+        </aside>
+        <script src="/script.js"></script>
+      </body>
+    </html>
+    
 </body>
 </html>
